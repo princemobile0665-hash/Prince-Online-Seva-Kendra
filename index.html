@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Online Seva</title>
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  text-align: center;
+}
+
+.header {
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card {
+  background: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  width: 90%;
+  max-width: 300px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+.lic { background: #2ecc71; }
+.bill { background: #e67e22; }
+.recharge { background: #3498db; }
+.aadhar { background: #9b59b6; }
+.whatsapp { background: #25D366; }
+.call { background: #e74c3c; }
+.location { background: #34495e; }
+.email { background: #f39c12; }
+
+.footer {
+  color: white;
+  padding: 10px;
+}
+</style>
+
+<script>
+function sendWhatsApp(msg){
+  window.open("https://wa.me/919425680837?text=" + encodeURIComponent(msg), "_blank");
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+Prince Online Seva Kendra
+</div>
+
+<div class="card">
+
+<button class="btn lic" onclick="sendWhatsApp('मुझे LIC प्रीमियम जमा करना है')">
+LIC Premium
+</button>
+
+<button class="btn bill" onclick="sendWhatsApp('मुझे बिजली बिल जमा करना है')">
+बिजली बिल
+</button>
+
+<button class="btn recharge" onclick="sendWhatsApp('मुझे मोबाइल रिचार्ज करना है')">
+मोबाइल रिचार्ज
+</button>
+
+<button class="btn aadhar" onclick="sendWhatsApp('मुझे आधार / समग्र ID सेवा चाहिए')">
+आधार / समग्र ID
+</button>
+
+</div>
+
+<div class="card">
+
+<button class="btn whatsapp" onclick="sendWhatsApp('नमस्ते, मुझे जानकारी चाहिए')">
+WhatsApp Chat
+</button>
+
+<button class="btn call" onclick="window.location.href='tel:9425680837'">
+Call Now
+</button>
+
+<button class="btn email" onclick="window.location.href='mailto:princemobile0665@gmail.com'">
+Send Email
+</button>
+
+<button class="btn location" onclick="window.open('https://maps.google.com', '_blank')">
+Location देखें
+</button>
+
+</div>
+
+<div class="footer">
+💡 घर बैठे सभी सेवाएं उपलब्ध<br>
+⚡ तेज और भरोसेमंद सेवा
+</div>
+
+</body>
+
+</html>
