@@ -1,119 +1,126 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prince Online Seva</title>
+<title>Prince Online Kendra</title>
 
 <style>
-body {
-  font-family: Arial;
-  margin: 0;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  text-align: center;
-}
+body { margin:0; font-family: Arial; background:#f2f2f2; }
 
 .header {
-  color: white;
-  padding: 20px;
-  font-size: 24px;
-  font-weight: bold;
+    background: linear-gradient(to right,#0047ab,#00c6ff);
+    color:white;
+    padding:15px;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
 }
 
-.card {
-  background: white;
-  margin: 15px;
-  padding: 15px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.search {
+    margin:10px;
+    padding:10px;
+    width:90%;
+    border-radius:20px;
+    border:1px solid #ccc;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    padding:10px;
+}
+
+.box {
+    padding:15px;
+    border-radius:10px;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+}
+
+.a{background:#f39c12;}
+.b{background:#e74c3c;}
+.c{background:#27ae60;}
+.d{background:#2980b9;}
+.e{background:#8e44ad;}
+.f{background:#16a085;}
+.g{background:#2ecc71;}
+.h{background:#34495e;}
+
+.section {
+    background:white;
+    margin:10px;
+    padding:15px;
+    border-radius:10px;
 }
 
 .btn {
-  display: block;
-  margin: 10px auto;
-  padding: 12px;
-  width: 90%;
-  max-width: 300px;
-  font-size: 16px;
-  color: white;
-  border: none;
-  border-radius: 8px;
+    width:100%;
+    padding:12px;
+    margin:5px 0;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:15px;
 }
 
-.lic { background: #2ecc71; }
-.bill { background: #e67e22; }
-.recharge { background: #3498db; }
-.aadhar { background: #9b59b6; }
-.whatsapp { background: #25D366; }
-.call { background: #e74c3c; }
-.location { background: #34495e; }
-.email { background: #f39c12; }
+.green{background:#25D366;}
+.blue{background:#007bff;}
 
-.footer {
-  color: white;
-  padding: 10px;
-}
 </style>
-
-<script>
-function sendWhatsApp(msg){
-  window.open("https://wa.me/919425680837?text=" + encodeURIComponent(msg), "_blank");
-}
-</script>
-
 </head>
 
 <body>
 
-<div class="header">
-Prince Online Seva Kendra
+<div class="header">🇮🇳 PRINCE ONLINE KENDRA</div>
+
+<center>
+<input class="search" placeholder="Search Services...">
+</center>
+
+<div class="grid">
+<div class="box a">Aadhaar</div>
+<div class="box b">PAN Card</div>
+<div class="box c">Samagra ID</div>
+<div class="box d">Voter ID</div>
+<div class="box e">Ayushman Card</div>
+<div class="box f">Income Certificate</div>
+<div class="box g">Recharge & Bill</div>
+<div class="box h">Job Portal</div>
 </div>
 
-<div class="card">
+<div class="section">
+<b>Payment Section</b><br><br>
+<center>
+<h3>Scan & Pay</h3>
 
-<button class="btn lic" onclick="sendWhatsApp('मुझे LIC प्रीमियम जमा करना है')">
-LIC Premium
-</button>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=upi://pay?pa=9229441468@kotak&pn=PREETI%20DWIVEDI" width="150"><br><br>
 
-<button class="btn bill" onclick="sendWhatsApp('मुझे बिजली बिल जमा करना है')">
-बिजली बिल
-</button>
-
-<button class="btn recharge" onclick="sendWhatsApp('मुझे मोबाइल रिचार्ज करना है')">
-मोबाइल रिचार्ज
-</button>
-
-<button class="btn aadhar" onclick="sendWhatsApp('मुझे आधार / समग्र ID सेवा चाहिए')">
-आधार / समग्र ID
-</button>
-
+<b>PREETI DWIVEDI</b><br>
+UPI: 9229441468@kotak
+</center>
 </div>
 
-<div class="card">
+<div class="section">
+<b>Document Upload</b><br><br>
 
-<button class="btn whatsapp" onclick="sendWhatsApp('नमस्ते, मुझे जानकारी चाहिए')">
-WhatsApp Chat
-</button>
+<button class="btn blue">Upload Document</button>
 
-<button class="btn call" onclick="window.location.href='tel:9425680837'">
-Call Now
-</button>
-
-<button class="btn email" onclick="window.location.href='mailto:princemobile0665@gmail.com'">
-Send Email
-</button>
-
-<button class="btn location" onclick="window.open('https://maps.google.com', '_blank')">
-Location देखें
+<button class="btn green" onclick="window.open('https://wa.me/919755382222')">
+Send Document on WhatsApp
 </button>
 
 </div>
 
-<div class="footer">
-💡 घर बैठे सभी सेवाएं उपलब्ध<br>
-⚡ तेज और भरोसेमंद सेवा
+<div class="section">
+<b>Customer Care</b><br><br>
+
+Rajeev Dwivedi<br>
+WhatsApp: 9755382222<br>
+Email: princemobile0665@mail.com
+
 </div>
 
 </body>
-
 </html>
